@@ -35,7 +35,6 @@ def turn(board)
   string = gets.chomp
   index = input_to_index(string)
   until valid_move?(board, index) == true
-  do 
     puts "Please enter 1-9:"
     gets.chomp
   end
