@@ -40,6 +40,6 @@ def turn(board)
     puts "Please enter 1-9:"
     gets.chomp
   end 
-  puts board
+  puts display_board(board)
 end
 
