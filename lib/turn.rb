@@ -38,6 +38,7 @@ def turn(board)
     puts "Please enter 1-9:"
     gets.chomp
   end
+  if 
   move(board, index, token="X")
   puts display_board(board)
 end
