@@ -36,11 +36,12 @@ def turn(board)
   index = input_to_index(string)
   if valid_move?(board, index) == true
     move(board, index, token="X")
+    display_board(board)
   else  while valid_move?(board, index) != true
     puts "Please enter 1-9:"
     gets.chomp
     end
   end
-  puts display_board(board)
+  puts 
 end
 
