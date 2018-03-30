@@ -34,10 +34,10 @@ def turn(board)
   puts "Please enter 1-9:"
   string = gets.chomp
   index = input_to_index(string)
-  valid_move?(board, index) == false 
-   # puts "Please enter 1-9:"
-  #else 
-  #  move(board, index, token)
-  #end 
+  if valid_move?(board, index) == false 
+    move(board, index, token)
+  else 
+    puts "Please enter 1-9:"
+  end 
 end
 
