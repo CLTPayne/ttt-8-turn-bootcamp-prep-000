@@ -37,11 +37,8 @@ def turn(board)
   if valid_move?(board, index) == true
     move(board, index, token="X")
     display_board(board)
-  else  while valid_move?(board, index) != true
-    puts "Please enter 1-9:"
-    gets.chomp
-    end
+  else  
+    turn(board)
   end
-  puts 
 end
 
